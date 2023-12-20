@@ -3,11 +3,15 @@
     "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "composite": true,
+    "outDir": "./dist",
+    // "composite": true,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
@@ -17,6 +21,8 @@
     "allowJs": true,
     "types": [
       "bun-types" // add Bun global
-    ]
+    ],
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true
   }
 }
