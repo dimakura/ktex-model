@@ -24,3 +24,4 @@ export {
 } from "./Punctuation";
 export { type Whitespace, createWhitespace } from "./Whitespace";
 export { type Word, createWord } from "./Word";
+export type { Token, Pos } from "./Token";

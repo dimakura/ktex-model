@@ -1,7 +1,3 @@
-export interface Node {
-  kind: NodeKind;
-}
-
 export enum NodeKind {
   // document
   Document = "Document",
